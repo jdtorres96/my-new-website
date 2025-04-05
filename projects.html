@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan David Torres | Misc</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
-      /* Color the MISC link salmon */
-      #misc { color: #fa8072; }
+      /* Force bullet point removal */
+      ul {
+        list-style-type: none !important;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
+      }
+      ul li {
+        display: inline-block !important;
+        margin: 0 10px;
+      }
+      /* Ensure MISC is salmon-colored in mobile view */
+      #misc { color: #fa8072 !important; }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Juan David Torres</h1>
-
+      <div class="blurb">
+        <h1>Juan David Torres</h1>
+      </div>
+    </div>
+    <div class="container">
       <nav>
         <ul>
-          <li><a href="./index.html">ABOUT</a></li>
-          <li><a id="misc" href="./projects.html">MISC</a></li>
-          <li><a href="./publications.html">RESEARCH</a></li>
+          <li><a href="index.html">ABOUT</a></li>
+          <li><a id="misc" href="projects.html">MISC</a></li>
+          <li><a href="publications.html">RESEARCH</a></li>
           <li><a href="https://jdtorres96.github.io/assets/pdf/CV.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
 
-      <div class="content">
+      <div class="research">
         <h2>Genetic diversity under nonequilibrium demography</h2>
         <p>Natural populations are seldom constant in size; these demographic changes can lead to interactions between selection and genetic drift that fall outside of equilibrium models. I study the patterns of genetic diversity that arise in populations of changing sizes, and the underlying allele frequency dynamics.</p>
 
@@ -33,8 +47,11 @@
         <h2>Temporal and spatial dynamics of cancer progression</h2>
         <p>In collaboration with the <a href="https://med.stanford.edu/winslowlab.html/" target="_blank">Winslow lab</a>, I work on characterizing tumor growth rates across space and time using genetic barcoding.</p>
       </div>
+
+      <br>
+      <br>
     </div>
 
-    <script type="module" src="./src/main.ts"></script>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>

@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan David Torres | Research</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
-      /* Color the RESEARCH link salmon */
+      /* Force bullet point removal */
+      ul {
+        list-style-type: none !important;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
+      }
+      ul li {
+        display: inline-block !important;
+        margin: 0 10px;
+      }
       #research { color: #fa8072; }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Juan David Torres</h1>
-
+      <div class="blurb">
+        <h1>Juan David Torres</h1>
+      </div>
+    </div>
+    <div class="container">
       <nav>
         <ul>
-          <li><a href="./index.html">ABOUT</a></li>
-          <li><a href="./projects.html">MISC</a></li>
-          <li><a id="research" href="./publications.html">RESEARCH</a></li>
+          <li><a href="index.html">ABOUT</a></li>
+          <li><a href="projects.html">MISC</a></li>
+          <li><a id="research" class="active" href="publications.html">RESEARCH</a></li>
           <li><a href="https://jdtorres96.github.io/assets/pdf/CV.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>
 
-      <div class="content">
+      <div class="publications">
         <h2><strong>published and accepted work</strong></h2>
         <p><a href="https://elisajacome.github.io/Jacome/immigration_incarceration.pdf" target="_blank">Law-Abiding Immigrants: The Incarceration Gap Between Immigrants and the US-born, 1870–2020</a> (with Ran Abramitzky, Leah Boustan, Elisa Jácome, and Santiago Pérez). <strong>American Economic Review: Insights</strong> Vol. 6, No. 4, December 2024 <a href="https://www.aeaweb.org/articles?id=10.1257/aeri.20230459" target="_blank">[AEA Link]</a></p>
 
@@ -52,8 +65,11 @@
         <h2><strong>old working papers</strong></h2>
         <p><a href="https://jdtorres96.github.io/assets/pdf/Eggs.pdf" target="_blank">Putting the Eggs in Multiple Baskets: Export Promotion in Colombia During the 1960s</a> (2018).</p>
       </div>
+
+      <br>
+      <br>
     </div>
 
-    <script type="module" src="./src/main.ts"></script>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>

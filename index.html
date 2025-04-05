@@ -5,27 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juan David Torres | About</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   <style>
-    /* Color the ABOUT link salmon */
-    #about { color: #fa8072; }
+    /* Ensure ABOUT is salmon-colored in mobile view */
+    #about { color: #fa8072 !important; }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Juan David Torres</h1>
-
+    <div class="blurb">
+      <h1>Juan David Torres</h1>
+    </div>
     <nav>
       <ul>
-        <li><a id="about" href="./index.html">ABOUT</a></li>
-        <li><a href="./projects.html">MISC</a></li>
-        <li><a href="./publications.html">RESEARCH</a></li>
+        <li><a id="about" href="index.html">ABOUT</a></li>
+        <li><a href="projects.html">MISC</a></li>
+        <li><a href="publications.html">RESEARCH</a></li>
         <li><a href="https://jdtorres96.github.io/assets/pdf/CV.pdf" target="_blank">CV</a></li>
       </ul>
     </nav>
 
-    <div class="content">
+    <div class="blurb">
       <p class="drop-cap">
         Hola! I am a PhD student in Economics at Stanford University. My fields of interest are development economics and economic history. I am originally from Colombia.
       </p>
@@ -38,13 +39,14 @@
       <p>
         <a href="https://jdtorres96.github.io/assets/pdf/CV.pdf" target="_blank">Here</a> is my CV
       </p>
-
-      <div style="text-align: center; margin-top: 40px;">
-        <img src="./img/prof_pic2.jpg" alt="Juan David Torres" style="max-width: 300px; width: 100%; height: auto;">
-      </div>
     </div>
+
+    <img src="img/prof_pic2.jpg" alt="Juan David Torres" style="max-width: 300px; width: 100%; display: block; margin: 30px auto;">
+
+    <br>
+    <br>
   </div>
 
-  <script type="module" src="./src/main.ts"></script>
+  <script type="module" src="src/main.ts"></script>
 </body>
 </html>

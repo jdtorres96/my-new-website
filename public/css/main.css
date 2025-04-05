@@ -4,100 +4,79 @@ html {
 
 body {
     background-color: #fbfbfb;
-    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 60px auto;
+    width: 800px;
+    text-align: center; /* Center content */
 }
 
-.container {
-    max-width: 800px;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 768px) {
-    body {
-        margin: 60px auto;
-    }
-
-    .container {
-        padding: 0;
-    }
-
-    nav ul {
-        padding: 0;
-        list-style: none;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin: 0 12px 15px 12px;
-    }
-
-    h1 {
-        text-align: center;
-    }
-}
-
-/* Mobile styles - matching the exact screenshot */
+/* Mobile-specific styles to match screenshot */
 @media only screen and (max-width: 767px) {
     body {
-        margin: 0;
-        padding: 10px 15px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: auto;
+        max-width: 100%;
+        transform: none;
     }
 
     h1 {
-        font-size: 42px;
-        margin-top: 10px;
+        font-size: 50px;
+        margin-top: 20px;
         margin-bottom: 10px;
-        text-align: center;
+        text-align: left;
     }
 
     nav ul {
         display: flex;
         flex-wrap: wrap;
-        list-style-type: none;
-        padding: 0;
-        margin: 0 0 20px 0;
-        justify-content: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+        text-align: left;
     }
 
     nav ul li {
-        font-size: 16px;
-        margin: 0 5px;
+        margin: 0 20px 0 0;
+    }
+
+    .blurb p {
+        text-align: left;
     }
 
     .drop-cap::first-letter {
-        font-size: 2.5em;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-    }
-
-    p {
-        line-height: 1.5;
-        margin-bottom: 12px;
+        font-size: 3.5em;
     }
 }
 
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0 12px 15px 12px;
+    }
+}
+
+/* Navigation */
 nav ul {
     font-size: 18px;
     line-height: 1.4em;
     font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
-    margin-bottom: 35px;
+    padding: 0px;
+    list-style: none;
+    margin: 0 0 35px 0;
 }
 
+nav ul li {
+    display: inline-block;
+}
+
+/* Links */
 a {
     font-size: inherit;
     line-height: inherit;
@@ -111,6 +90,7 @@ a:hover, #about.active, #research.active, #publications.active, #contact.active,
     color: #fa8072;
 }
 
+/* Headings */
 h1 {
     font-size: 52px;
     font-family: 'Albra', 'Tiempos', 'Times New Roman', 'Serif';
@@ -125,8 +105,10 @@ h2 {
     color: #333;
     margin-bottom: 6px;
     margin-top: 0px;
+    text-align: left; /* Left-align section headings */
 }
 
+/* Text */
 p {
     font-size: 18px;
     line-height: 1.4em;
@@ -134,6 +116,15 @@ p {
     color: #333;
     margin-bottom: 1em;
     margin-top: 0px;
+    text-align: left; /* Left-align paragraph text */
+}
+
+.blurb {
+    text-align: left; /* Left-align text in blurb sections */
+}
+
+.publications, .research {
+    text-align: left; /* Left-align text in content sections */
 }
 
 sup {
@@ -148,6 +139,7 @@ ol {
     color: #333;
     margin-bottom: 6px;
     margin-top: 0px;
+    text-align: left; /* Left-align list items */
 }
 
 ol p {
@@ -159,6 +151,7 @@ ol p {
     margin-top: 0px;
 }
 
+/* Special elements */
 .drop-cap::first-letter {
     font-size: 3em;
     font-family: 'Albra', 'Tiempos', 'Times New Roman', 'Serif';
@@ -200,7 +193,7 @@ hr {
     margin-bottom: 1.4em;
 }
 
-.github-link {
+.github-link p {
     color: #d1d1d1;
     font-size: 0.95em;
 }
@@ -237,7 +230,7 @@ hr {
     max-width: 480px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .figure-container {
         flex-direction: row;
         justify-content: flex-start;

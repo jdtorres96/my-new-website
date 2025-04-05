@@ -1,0 +1,10 @@
+name: Juan David Torres
+title: Juan David Torres
+description: Personal academic website
+baseurl: ""
+url: ""
+
+# Force GitHub Pages to process the site
+markdown: kramdown
+theme: null
+github: [metadata]
