@@ -1,42 +1,101 @@
 html {
-    cursor: url("https://ext.same-assets.com/2937161653/2558212801.png"), auto !important;
     height: 101%;
 }
 
-@media only screen and (min-width: 1025px) {
+body {
+    background-color: #fbfbfb;
+    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
     body {
         margin: 60px auto;
-        width: 800px;
-        overflow: visible !important;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    nav ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 12px 15px 12px;
+    }
+
+    h1 {
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+/* Mobile styles - matching the exact screenshot */
+@media only screen and (max-width: 767px) {
     body {
-        margin: 60px 60px;
-        width: 480px;
-        transform: scale(1.8);
-        transform-origin: 0 0;
-        -webkit-text-size-adjust: 100%;
-        overflow: visible !important;
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        justify-content: center;
+    }
+
+    nav ul li {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .drop-cap::first-letter {
+        font-size: 2.5em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 12px;
     }
 }
 
 nav ul {
     font-size: 18px;
     line-height: 1.4em;
-    font-family:'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    margin-top: 0px;
+    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
     margin-bottom: 35px;
-    margin-right: 0px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 25px;
-    margin-bottom: 15px
 }
 
 a {
@@ -47,41 +106,34 @@ a {
     color: #888;
 }
 
-a:hover, #about.active, #research.active, #publications.active, #contact.active, #notes.active {
+a:hover, #about.active, #research.active, #publications.active, #contact.active, #notes.active, #misc.active {
     text-decoration: none;
     color: #fa8072;
 }
 
-a {
-    cursor: url("https://ext.same-assets.com/2937161653/2866536465.png"), auto !important;
-}
-
 h1 {
     font-size: 52px;
-    font-family:'Albra', 'Tiempos', 'Times New Roman', 'Serif';
+    font-family: 'Albra', 'Tiempos', 'Times New Roman', 'Serif';
     margin-bottom: 18px;
-    overflow: visible !important;
 }
 
 h2 {
     font-size: 20px;
     line-height: 1em;
     font-weight: bold;
-    font-family:'Albra', 'Tiempos', 'Times New Roman', 'Serif';
+    font-family: 'Albra', 'Tiempos', 'Times New Roman', 'Serif';
     color: #333;
     margin-bottom: 6px;
     margin-top: 0px;
-    overflow: visible !important;
 }
 
 p {
     font-size: 18px;
     line-height: 1.4em;
-    font-family:'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
     margin-bottom: 1em;
     margin-top: 0px;
-    overflow: visible !important;
 }
 
 sup {
@@ -92,26 +144,24 @@ sup {
 
 ol {
     font-size: 18px;
-    font-family:'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
     margin-bottom: 6px;
     margin-top: 0px;
-    overflow: visible !important;
 }
 
 ol p {
     font-size: 18px;
     line-height: 1.4em;
-    font-family:'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Avenir', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
     margin-bottom: 6px;
     margin-top: 0px;
-    overflow: visible !important;
 }
 
 .drop-cap::first-letter {
     font-size: 3em;
-    font-family:'Albra', 'Tiempos', 'Times New Roman', 'Serif';
+    font-family: 'Albra', 'Tiempos', 'Times New Roman', 'Serif';
     float: left;
     margin-right: 8px;
     margin-bottom: -0.2em;
@@ -141,6 +191,8 @@ hr {
     height: 1px;
     color: #333;
     background-color: #333;
+    width: 25%;
+    margin-left: 0;
 }
 
 .footnote {
@@ -165,10 +217,6 @@ hr {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.github-link span {
-    cursor: url("https://ext.same-assets.com/2937161653/2866536465.png"), auto !important;
-}
-
 .figure-container {
     display: flex;
     flex-direction: column;
@@ -189,7 +237,7 @@ hr {
     max-width: 480px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .figure-container {
         flex-direction: row;
         justify-content: flex-start;
@@ -204,10 +252,6 @@ hr {
         max-width: 400px;
     }
     .legend {
-        margin-top: 1em
+        margin-top: 1em;
     }
-}
-
-body {
-    background-color: #fbfbfb;
 }

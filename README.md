@@ -1,6 +1,6 @@
 # My Website
 
-A personal academic website based on Anastasia Lyulina's design, featuring a clean, minimalist aesthetic suitable for academic profiles.
+A personal academic website based on Juan David Torres' design, featuring a clean, minimalist aesthetic suitable for academic profiles.
 
 ## Features
 
@@ -8,7 +8,6 @@ A personal academic website based on Anastasia Lyulina's design, featuring a cle
 - Clean academic layout with profile information
 - Research and publications sections
 - Custom styling including drop caps and typography
-- Custom cursor effects
 
 ## Pages
 
