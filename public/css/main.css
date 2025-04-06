@@ -23,15 +23,15 @@ body {
         font-size: 50px;
         margin-top: 20px;
         margin-bottom: 10px;
-        text-align: left;
+        text-align: center;
     }
 
     nav ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 20px 0;
-        text-align: left;
+        text-align: center;
     }
 
     nav ul li {
